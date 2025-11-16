@@ -1,1 +1,26 @@
-..。
+baidu.com###bottom_layer
+baidu.com###placeholder
+baidu.com###s_main
+baidu.com###s_new_search_guide
+baidu.com###s_side_wrapper
+baidu.com###s-hotsearch-wrapper
+baidu.com###s-top-left
+baidu.com###bottom
+baidu.com###header > div:last-child
+baidu.com###logo
+baidu.com###tab_news_1
+baidu.com###userinfo-wrap
+baidu.com###con-ceiling-wrapper
+store.steampowered.com###oneNoteWebClipperPageNav
+yuanbao.tencent.com##div[class*="index__input-hot-search-list"]
+yuanbao.tencent.com##.input-guide-v2.input-guide-v2--visible
+yuanbao.tencent.com##.download_hint__wrap
+yuanbao.tencent.com##.agent-dialogue__tool__download
+yuanbao.tencent.com##.index_content__Ya5lt
+yuanbao.tencent.com##.agent-chat__conv--ai__promptHintV2--hints
+doc88.com###boxright
+news.qq.com###download-btn-wrapid
+manga.bilibili.com###root > div.w-full.min-w-\[1300px\]:last-child > div.fixed.inset-0.z-50.flex.items-center.justify-center.bg-black\/80:last-child
+zy.21cnjy.com###J_FixedShowDetailTit
+zy.21cnjy.com###wrap > div.main.container > div.view-header.clearfix:first-child > div.fr.widget_views.hidden-xs:last-child > div.entry-bar-inner.clearfix.text-center
+sohu.com###right-side-bar > div
