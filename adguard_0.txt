@@ -24,3 +24,11 @@ manga.bilibili.com###root > div.w-full.min-w-\[1300px\]:last-child > div.fixed.i
 zy.21cnjy.com###J_FixedShowDetailTit
 zy.21cnjy.com###wrap > div.main.container > div.view-header.clearfix:first-child > div.fr.widget_views.hidden-xs:last-child > div.entry-bar-inner.clearfix.text-center
 sohu.com###right-side-bar > div
+baidu.com###s_wrap > div.aigc-skin-bg:first-child > div.aigc-container:last-child > div.san-card:last-child > div.ai-tools-container_S4Ind > div:last-child > div.top-bar_2NBcp:first-child
+baidu.com###s_wrap > div.aigc-skin-bg:first-child > div.aigc-container:last-child > div.san-card:last-child > div.ai-tools-container_S4Ind
+baidu.com###chat-input-extension > div > div.panel-list_8jHmm
+baidu.com###chat-input-extension
+manhuayu5.com##main.main-content:nth-child(2) > div.like-card:last-child
+51test.net##div.container:last-child > div.main-bg:first-child > div.content-fr:last-child
+51test.net###foot > div.hzjm > div.down_btn:nth-child(14)
+t.bilibili.com##div.bili-dyn-search-trendings
