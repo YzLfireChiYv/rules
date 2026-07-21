@@ -1,0 +1,36 @@
+{
+  "id": "com.test.test3",
+  "name": "TEST-3: 数值判断验证",
+  "description": "用于排查 BiliPai 语法解析 Bug 的测试插件",
+  "author": "Test",
+  "version": "1.0",
+  "type": "feed",
+  "rules": [
+    {
+      "action": "hide",
+      "condition": {
+        "or": [
+          {
+            "and": [
+              {
+                "field": "stat.view",
+                "op": "ge",
+                "value": 100
+              },
+              {
+                "field": "stat.view",
+                "op": "lt",
+                "value": 200
+              },
+              {
+                "field": "stat.like",
+                "op": "lt",
+                "value": 6
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

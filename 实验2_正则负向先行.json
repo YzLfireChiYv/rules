@@ -1,0 +1,27 @@
+{
+  "id": "com.test.test2",
+  "name": "TEST-2: 负向先行验证",
+  "description": "用于排查 BiliPai 语法解析 Bug 的测试插件",
+  "author": "Test",
+  "version": "1.0",
+  "type": "feed",
+  "rules": [
+    {
+      "action": "hide",
+      "condition": {
+        "and": [
+          {
+            "field": "title",
+            "op": "regex",
+            "value": "^(?!.*(?:洛天依)).*$"
+          },
+          {
+            "field": "title",
+            "op": "eq",
+            "value": "测试黑名单词汇绝对不可能出现"
+          }
+        ]
+      }
+    }
+  ]
+}
