@@ -1,74 +1,8 @@
-# ==========================================
-# 自定义规则模板（支持指定分组）
-# ==========================================
-# 使用说明：
-# 1. 本文件由 Worker 通过 rule-providers 拉取（behavior: classical）
-# 2. 规则格式必须带目标分组，例如：
-#    - DOMAIN-SUFFIX,example.com,Steam
-#    - DOMAIN-KEYWORD,test,US_Guard
-# 3. 支持的分组名称（必须与 Worker 里完全一致）：
-#    - PROXY          （默认代理）
-#    - US_Guard       （美国保号，AI / 重要账号用）
-#    - Steam          （Steam 及需要美服的游戏）
-#    - Japan_Sites    （日本站点）
-#    - Meetings       （Teams 会议）
-#    - GitHub_DL      （大文件下载）
-#    - Domestic       （国内）
-#    - DIRECT         （强制直连）
-# 4. 优先级：本规则位于「高危强制 DIRECT」之后、「场景分流」之前
-# 5. 修改后约 1 小时内客户端自动更新
-# ==========================================
+# 自定义规则（完整规则 + 目标分组）
+# 支持注释和空行
+# 直接在赛博大善人cloudflare那解析算了
 
-payload:
-  # ==================================================
-  # 强制走 US_Guard（美国节点，保护 AI 账号 / 必须美服的游戏）
-  # ==================================================
-  # - DOMAIN-SUFFIX,openai.com,US_Guard
-  # - DOMAIN-SUFFIX,chatgpt.com,US_Guard
-  # - DOMAIN-SUFFIX,claude.ai,US_Guard
-  # - DOMAIN-SUFFIX,x.ai,US_Guard
-  # - DOMAIN-SUFFIX,grok.com,US_Guard
-  # - DOMAIN-SUFFIX,your-us-only-game.com,US_Guard
-
-  # ==================================================
-  # 强制走 Steam 分组（需要美服的游戏推荐绑这里）
-  # 你可把临时搜索到的游戏域名加在这里
-  # ==================================================
-  # - DOMAIN-SUFFIX,example-game.com,Steam
-  # - DOMAIN-SUFFIX,game-cdn.example.com,Steam
-  # - DOMAIN-KEYWORD,some-game,Steam
-  - PROCESS-NAME,MadokaExedra.exe,Steam
-  - DOMAIN-SUFFIX,madoka-exedra.com,Steam
-  - DOMAIN-SUFFIX,games.madoka-exedra.com,Steam
-  - DOMAIN-SUFFIX,webshop-gl.games.madoka-exedra.com,Steam
-  - DOMAIN-SUFFIX,help-us.games.madoka-exedra.com,Steam
-  - DOMAIN-SUFFIX,faq.games.madoka-exedra.com,Steam
-  - DOMAIN-KEYWORD,madoka-exedra,Steam
-  - DOMAIN-KEYWORD,magia.exedra,Steam
-
-  # ==================================================
-  # 强制走 PROXY（普通需要代理的网站）
-  # ==================================================
-  # - DOMAIN-SUFFIX,example.com,PROXY
-  # - DOMAIN-KEYWORD,blocked-site,PROXY
-
-  # ==================================================
-  # 强制走 Japan_Sites
-  # ==================================================
-  # - DOMAIN-SUFFIX,pixiv.net,Japan_Sites
-  # - DOMAIN-SUFFIX,dmm.com,Japan_Sites
-
-  # ==================================================
-  # 强制走 GitHub_DL（大文件 / 下载优化）
-  # ==================================================
-  # - DOMAIN-SUFFIX,github.com,GitHub_DL
-  # - DOMAIN-SUFFIX,githubusercontent.com,GitHub_DL
-
-  # ==================================================
-  # 强制直连（特殊情况）
-  # ==================================================
-  # - DOMAIN-SUFFIX,some-domestic-but-need-direct.com,DIRECT
-
-  # ==================================================
-  # 在这里添加你自己的规则（取消注释并修改即可）
-  # ==================================================
+- PROCESS-NAME,MadokaExedra.exe,Steam
+- DOMAIN-SUFFIX,example-game.com,Steam
+- DOMAIN-SUFFIX,some-ai.com,US_Guard
+# - DOMAIN-SUFFIX,test.com,PROXY
