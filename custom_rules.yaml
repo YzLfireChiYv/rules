@@ -6,3 +6,33 @@
 #- DOMAIN-SUFFIX,example-game.com,Steam
 #- DOMAIN-SUFFIX,some-ai.com,US_Guard
 # - DOMAIN-SUFFIX,test.com,PROXY
+
+
+# ==================================================
+# 局域网 / 本地发现类工具 → 强制 DIRECT
+# 目的：保证同一 Wi-Fi 下设备能互相发现和传输
+# ==================================================
+
+# Snapdrop / Pairdrop 系列
+- DOMAIN-SUFFIX,snapdrop.net,DIRECT
+- DOMAIN-SUFFIX,pairdrop.net,DIRECT
+- DOMAIN-SUFFIX,snap-drop.net,DIRECT
+
+# LocalSend
+- DOMAIN-SUFFIX,localsend.org,DIRECT
+
+# 其他常见局域网文件/投屏工具
+- DOMAIN-SUFFIX,sharedrop.io,DIRECT
+- DOMAIN-SUFFIX,airdropper.com,DIRECT
+- DOMAIN-SUFFIX,send-anywhere.com,DIRECT
+
+# 常见 NAS / 路由器本地管理（按需取消注释）
+# - DOMAIN-SUFFIX,quickconnect.to,DIRECT
+# - DOMAIN-SUFFIX,synology.me,DIRECT
+# - DOMAIN-SUFFIX,myqnapcloud.com,DIRECT
+
+# 本地开发 / 内网穿透管理页（按需）
+# - DOMAIN-SUFFIX,frp-xxx.com,DIRECT
+
+
+#
