@@ -3,6 +3,6 @@
 # 直接在赛博大善人cloudflare那解析算了
 
 - PROCESS-NAME,MadokaExedra.exe,Steam
-- DOMAIN-SUFFIX,example-game.com,Steam
-- DOMAIN-SUFFIX,some-ai.com,US_Guard
+#- DOMAIN-SUFFIX,example-game.com,Steam
+#- DOMAIN-SUFFIX,some-ai.com,US_Guard
 # - DOMAIN-SUFFIX,test.com,PROXY
