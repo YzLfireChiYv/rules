@@ -37,6 +37,7 @@ payload:
   # - DOMAIN-SUFFIX,example-game.com,Steam
   # - DOMAIN-SUFFIX,game-cdn.example.com,Steam
   # - DOMAIN-KEYWORD,some-game,Steam
+  - PROCESS-NAME,MadokaExedra.exe,Steam
   - DOMAIN-SUFFIX,madoka-exedra.com,Steam
   - DOMAIN-SUFFIX,games.madoka-exedra.com,Steam
   - DOMAIN-SUFFIX,webshop-gl.games.madoka-exedra.com,Steam
