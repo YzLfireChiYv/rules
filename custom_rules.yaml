@@ -34,5 +34,10 @@
 # 本地开发 / 内网穿透管理页（按需）
 # - DOMAIN-SUFFIX,frp-xxx.com,DIRECT
 
-
-#
+# 添加游戏圆哆啦的
+- DOMAIN-SUFFIX,api-gl.mmme.pokelabo.jp,US_Guard
+- DOMAIN-SUFFIX,gl-pkl-us-payment.gree-apps.net,US_Guard
+#- DOMAIN-SUFFIX,,US_Guard
+- DOMAIN-SUFFIX,api.mmme.pokelabo.jp,Japan_Sites
+- DOMAIN-SUFFIX,gl-pkl-jp-payment.gree-apps.net,Japan_Sites
+#- DOMAIN-SUFFIX,,Japan_Sites
