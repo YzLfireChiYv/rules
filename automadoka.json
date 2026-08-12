@@ -1,21 +1,21 @@
 {
   "schema": 1,
-  "published_at": "2026-08-06",
+  "published_at": "2026-08-12",
   "default": "en",
-  "note": "Upload as automadoka.json to GitHub raw (e.g. YzLfireChiYv/rules). Client: fetch_fingerprint(url, channel). Extracted from local XAPK 3.13.0 by automadoka extract-xapk / build-fp.",
+  "note": "Extracted by scripts/sync_fingerprint_from_xapk.py on 2026-08-12. en 3.14.0 <- Madoka+Magica+Magia+Exedra_3.14.0_APKPure.xapk; jp 3.14.0 <- 魔法少女まどかマギカ+Magia+Exedra_3.14.0_APKPure.xapk. Upload to rules raw as automadoka.json; also publish/automadoka.json for embed.",
   "channels": {
     "en": {
       "channel": "en",
       "package_id": "com.aniplex.magia.exedra.en",
-      "version": "3.13.0",
-      "sign": "d929c89a96c474de5772d47848491c00",
+      "version": "3.14.0",
+      "sign": "e5f68c61c2aaaa43f9304e7b8fab0acf",
       "libcount": 34
     },
     "jp": {
       "channel": "jp",
       "package_id": "com.aniplex.magia.exedra.jp",
-      "version": "3.13.0",
-      "sign": "ac5fe842e97b0d5f5c129755c0c63d71",
+      "version": "3.14.0",
+      "sign": "780221bced35857cdb13b5acc492718d",
       "libcount": 34
     }
   }
