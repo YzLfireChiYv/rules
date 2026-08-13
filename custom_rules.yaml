@@ -8,6 +8,9 @@
 # - DOMAIN-SUFFIX,test.com,PROXY
 
 
+# 微软开会
+- PROCESS-NAME,ms-teams.exe,Meetings
+
 # ==================================================
 # 局域网 / 本地发现类工具 → 强制 DIRECT
 # 目的：保证同一 Wi-Fi 下设备能互相发现和传输
