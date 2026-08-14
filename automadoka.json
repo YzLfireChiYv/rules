@@ -1,22 +1,35 @@
 {
-  "schema": 1,
-  "published_at": "2026-08-12",
+  "schema": 2,
+  "kind": "rm_rules_bundle",
+  "published_at": "2026-08-14",
   "default": "en",
-  "note": "Extracted by scripts/sync_fingerprint_from_xapk.py on 2026-08-12. en 3.14.0 <- Madoka+Magica+Magia+Exedra_3.14.0_APKPure.xapk; jp 3.14.0 <- 魔法少女まどかマギカ+Magia+Exedra_3.14.0_APKPure.xapk. Upload to rules raw as automadoka.json; also publish/automadoka.json for embed.",
+  "note": "fingerprint + signed license. Upload to rules/main/automadoka.json",
   "channels": {
     "en": {
       "channel": "en",
       "package_id": "com.aniplex.magia.exedra.en",
-      "version": "3.14.0",
-      "sign": "e5f68c61c2aaaa43f9304e7b8fab0acf",
+      "version": "3.14.1",
+      "sign": "064b44d4045c5958f70d01e00e0ec7c3",
       "libcount": 34
     },
     "jp": {
       "channel": "jp",
       "package_id": "com.aniplex.magia.exedra.jp",
-      "version": "3.14.0",
-      "sign": "780221bced35857cdb13b5acc492718d",
+      "version": "3.14.1",
+      "sign": "7e4c9e9893c3fe73976020719471488b",
       "libcount": 34
     }
+  },
+  "license": {
+    "schema": 2,
+    "kind": "rm_version_key",
+    "game_version": "",
+    "until_game_version": "3.15",
+    "until": "",
+    "mode": "open",
+    "issued_at": "2026-08-14T08:59:10.787245+00:00",
+    "friends": [],
+    "whitelist": [],
+    "sig": "TsmRwkJ7jBQQc7Ma99LtpmRC15fQ7kJy/KeIX0WDFaLUBN6h8r1VrSxR14XghijzxijJwijZO60AhNB4R5pYCQ=="
   }
 }
