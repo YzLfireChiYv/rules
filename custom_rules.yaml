@@ -1,27 +1,14 @@
-# 电脑 Clash 自定义规则（Worker 按 CUSTOM_RULE_URL 内联）
-# 路由器 tproxy 看不见进程名；PROCESS-* 只对 PC Clash 生效。
-# 域名大组在 Worker / gw-ctrl 内置（docs/RULES.md），这里不要重复。
-#
-# 匹配从上到下，先中先胜。轻重：
-#   1. PROCESS-NAME  — 域名分不全（Teams 会打一堆 microsoft / 遥测域）
-#   2. 个人域名
-#   3. （其余交给订阅内置）
+# 外部规则（低优先）。Worker 插在内置组之后、GEO 之前。
+# 不要把安全域 / Teams 进程写在这里：GitHub 文件不得抬到最前。
+# 圆哆啦只放这里，不进 Worker/路由内置。
 
-# --- 1. 进程名（必须最先）---
-# Teams 已退出中国：不要再打 Meetings（默认 DIRECT / 出口和登录不一致）。
-- PROCESS-NAME,ms-teams.exe,US_Guard
-- PROCESS-NAME,Teams.exe,US_Guard
-- PROCESS-NAME,ms-teamsupdate.exe,US_Guard
-- PROCESS-NAME,ONENOTE.EXE,US_Guard
-- PROCESS-NAME,MadokaExedra.exe,Steam
+# --- 圆哆啦（精确主机，避免后缀误伤）---
+- DOMAIN,api.mmme.pokelabo.jp,Japan_Sites
+- DOMAIN,gl-pkl-jp-payment.gree-apps.net,Japan_Sites
+- DOMAIN,api-gl.mmme.pokelabo.jp,US_Guard
+- DOMAIN,gl-pkl-us-payment.gree-apps.net,US_Guard
 
-# --- 2. 个人例外（只放内置没有的）---
+# --- 个人例外 ---
 - DOMAIN-SUFFIX,frp-egg.com,DIRECT
 - DOMAIN-SUFFIX,huang1111.cn,DIRECT
 - DOMAIN-SUFFIX,girigirilove.com,DIRECT
-
-# 已迁走、不要再写：
-#   snapdrop / pairdrop / localsend / sharedrop → Worker/路由 home_direct
-#   圆哆啦 pokelabo / gree-apps → Worker/路由 japan + us_guard（用 DOMAIN 精确条）
-#   teams.live.com → 内置 us_guard
-#   ctyun / 智慧树 / 雨课堂 / 豆包 / 闲鱼 / zte.home → home_direct
