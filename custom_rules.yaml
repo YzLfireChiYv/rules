@@ -1,47 +1,27 @@
-# 自定义规则（完整规则 + 目标分组）
-# 支持注释和空行
-# 直接在赛博大善人cloudflare那解析算了
+# 电脑 Clash 自定义规则（Worker 按 CUSTOM_RULE_URL 内联）
+# 路由器 tproxy 看不见进程名；PROCESS-* 只对 PC Clash 生效。
+# 域名大组在 Worker / gw-ctrl 内置（docs/RULES.md），这里不要重复。
+#
+# 匹配从上到下，先中先胜。轻重：
+#   1. PROCESS-NAME  — 域名分不全（Teams 会打一堆 microsoft / 遥测域）
+#   2. 个人域名
+#   3. （其余交给订阅内置）
 
-- PROCESS-NAME,MadokaExedra.exe,Steam
+# --- 1. 进程名（必须最先）---
+# Teams 已退出中国：不要再打 Meetings（默认 DIRECT / 出口和登录不一致）。
+- PROCESS-NAME,ms-teams.exe,US_Guard
+- PROCESS-NAME,Teams.exe,US_Guard
+- PROCESS-NAME,ms-teamsupdate.exe,US_Guard
 - PROCESS-NAME,ONENOTE.EXE,US_Guard
-#- DOMAIN-SUFFIX,example-game.com,Steam
-#- DOMAIN-SUFFIX,some-ai.com,US_Guard
-# - DOMAIN-SUFFIX,test.com,PROXY
+- PROCESS-NAME,MadokaExedra.exe,Steam
 
+# --- 2. 个人例外（只放内置没有的）---
+- DOMAIN-SUFFIX,frp-egg.com,DIRECT
+- DOMAIN-SUFFIX,huang1111.cn,DIRECT
+- DOMAIN-SUFFIX,girigirilove.com,DIRECT
 
-# 微软开会
-- PROCESS-NAME,ms-teams.exe,Meetings
-
-# ==================================================
-# 局域网 / 本地发现类工具 → 强制 DIRECT
-# 目的：保证同一 Wi-Fi 下设备能互相发现和传输
-# ==================================================
-
-# Snapdrop / Pairdrop 系列
-- DOMAIN-SUFFIX,snapdrop.net,DIRECT
-- DOMAIN-SUFFIX,pairdrop.net,DIRECT
-- DOMAIN-SUFFIX,snap-drop.net,DIRECT
-
-# LocalSend
-- DOMAIN-SUFFIX,localsend.org,DIRECT
-
-# 其他常见局域网文件/投屏工具
-- DOMAIN-SUFFIX,sharedrop.io,DIRECT
-- DOMAIN-SUFFIX,airdropper.com,DIRECT
-- DOMAIN-SUFFIX,send-anywhere.com,DIRECT
-
-# 常见 NAS / 路由器本地管理（按需取消注释）
-# - DOMAIN-SUFFIX,quickconnect.to,DIRECT
-# - DOMAIN-SUFFIX,synology.me,DIRECT
-# - DOMAIN-SUFFIX,myqnapcloud.com,DIRECT
-
-# 本地开发 / 内网穿透管理页（按需）
-# - DOMAIN-SUFFIX,frp-xxx.com,DIRECT
-
-# 添加游戏圆哆啦的
-- DOMAIN-SUFFIX,api-gl.mmme.pokelabo.jp,US_Guard
-- DOMAIN-SUFFIX,gl-pkl-us-payment.gree-apps.net,US_Guard
-#- DOMAIN-SUFFIX,,US_Guard
-- DOMAIN-SUFFIX,api.mmme.pokelabo.jp,Japan_Sites
-- DOMAIN-SUFFIX,gl-pkl-jp-payment.gree-apps.net,Japan_Sites
-#- DOMAIN-SUFFIX,,Japan_Sites
+# 已迁走、不要再写：
+#   snapdrop / pairdrop / localsend / sharedrop → Worker/路由 home_direct
+#   圆哆啦 pokelabo / gree-apps → Worker/路由 japan + us_guard（用 DOMAIN 精确条）
+#   teams.live.com → 内置 us_guard
+#   ctyun / 智慧树 / 雨课堂 / 豆包 / 闲鱼 / zte.home → home_direct
