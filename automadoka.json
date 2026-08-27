@@ -1,22 +1,22 @@
 {
   "schema": 2,
   "kind": "rm_rules_bundle",
-  "published_at": "2026-08-17",
+  "published_at": "2026-08-27",
   "default": "en",
   "note": "fingerprint + signed license. Upload to rules/main/automadoka.json",
   "channels": {
-    "jp": {
-      "channel": "jp",
-      "package_id": "com.aniplex.magia.exedra.jp",
-      "version": "3.14.2",
-      "sign": "952eb1db9a243b36c8dfde895c40fbb3",
-      "libcount": 34
-    },
     "en": {
       "channel": "en",
       "package_id": "com.aniplex.magia.exedra.en",
-      "version": "3.14.2",
-      "sign": "e3512a9c258cc361bdaccb1773a90950",
+      "version": "3.16.0",
+      "sign": "a377a1585d260a3cb94e942cf5662cbf",
+      "libcount": 34
+    },
+    "jp": {
+      "channel": "jp",
+      "package_id": "com.aniplex.magia.exedra.jp",
+      "version": "3.16.0",
+      "sign": "aa895945933d8490133d7e8dac68db52",
       "libcount": 34
     }
   },
@@ -24,12 +24,12 @@
     "schema": 2,
     "kind": "rm_version_key",
     "game_version": "",
-    "until_game_version": "3.15",
+    "until_game_version": "3.16",
     "until": "",
     "mode": "open",
-    "issued_at": "2026-08-14T08:59:10.787245+00:00",
+    "issued_at": "2026-08-27T11:13:11.292041700+00:00",
     "friends": [],
     "whitelist": [],
-    "sig": "TsmRwkJ7jBQQc7Ma99LtpmRC15fQ7kJy/KeIX0WDFaLUBN6h8r1VrSxR14XghijzxijJwijZO60AhNB4R5pYCQ=="
+    "sig": "sqUfEbx+y3jpW2yE7tqBpZMNKriLSrE6dMolTr9+dhOvlhtpd6uMcKVMMNCuf1WqozY0arpi3h9qQLMSu+/6BQ=="
   }
 }
