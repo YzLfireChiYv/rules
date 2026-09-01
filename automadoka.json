@@ -1,15 +1,15 @@
 {
   "schema": 2,
   "kind": "rm_rules_bundle",
-  "published_at": "2026-08-27",
+  "published_at": "2026-09-01",
   "default": "en",
   "note": "fingerprint + signed license. Upload to rules/main/automadoka.json",
   "channels": {
     "en": {
       "channel": "en",
       "package_id": "com.aniplex.magia.exedra.en",
-      "version": "3.16.0",
-      "sign": "a377a1585d260a3cb94e942cf5662cbf",
+      "version": "3.16.1",
+      "sign": "8b5f51b66899d5bf097e2ecbed209e9b",
       "libcount": 34
     },
     "jp": {
