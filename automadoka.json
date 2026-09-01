@@ -15,8 +15,8 @@
     "jp": {
       "channel": "jp",
       "package_id": "com.aniplex.magia.exedra.jp",
-      "version": "3.16.0",
-      "sign": "aa895945933d8490133d7e8dac68db52",
+      "version": "3.16.1",
+      "sign": "8b5f51b66899d5bf097e2ecbed209e9b",
       "libcount": 34
     }
   },
