@@ -1,7 +1,7 @@
 {
   "schema": 2,
   "kind": "rm_rules_bundle",
-  "published_at": "2026-09-01",
+  "published_at": "2026-09-09",
   "default": "en",
   "note": "fingerprint + signed license. Upload to rules/main/automadoka.json",
   "channels": {
@@ -24,12 +24,12 @@
     "schema": 2,
     "kind": "rm_version_key",
     "game_version": "",
-    "until_game_version": "3.16",
+    "until_game_version": "3.18",
     "until": "",
     "mode": "open",
-    "issued_at": "2026-08-27T11:13:11.292041700+00:00",
+    "issued_at": "2026-09-09T15:53:33.005525400+00:00",
     "friends": [],
     "whitelist": [],
-    "sig": "sqUfEbx+y3jpW2yE7tqBpZMNKriLSrE6dMolTr9+dhOvlhtpd6uMcKVMMNCuf1WqozY0arpi3h9qQLMSu+/6BQ=="
+    "sig": "HJgSIHpnBxgHCAfByMwJewcC59+3QI31wmb805AKm5g8f9Hl9BtPs/NuE/kFw+M9oXc+ashqwj/zFL9ZwSyTDw=="
   }
 }
