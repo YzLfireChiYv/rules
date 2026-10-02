@@ -8,10 +8,6 @@
 - DOMAIN,api-gl.mmme.pokelabo.jp,US_Guard
 - DOMAIN,gl-pkl-us-payment.gree-apps.net,US_Guard
 
-# --- Cloudflare 控制台 / Workers（platform.dash 等）---
-- DOMAIN-SUFFIX,cloudflare.com,GitHub_DL
-- DOMAIN-SUFFIX,workers.dev,GitHub_DL
-
 # --- 个人例外 ---
 - DOMAIN-SUFFIX,frp-egg.com,DIRECT
 - DOMAIN-SUFFIX,huang1111.cn,DIRECT
