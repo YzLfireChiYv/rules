@@ -1,22 +1,22 @@
 {
   "schema": 2,
   "kind": "rm_rules_bundle",
-  "published_at": "2026-09-25",
+  "published_at": "2026-10-04",
   "default": "en",
   "note": "fingerprint + signed license. Upload to rules/main/automadoka.json",
   "channels": {
-    "jp": {
-      "channel": "jp",
-      "package_id": "com.aniplex.magia.exedra.jp",
-      "version": "3.19.0",
-      "sign": "fe9b4e89097bd0df0715858928cd4ac7",
-      "libcount": 34
-    },
     "en": {
       "channel": "en",
       "package_id": "com.aniplex.magia.exedra.en",
-      "version": "3.19.0",
-      "sign": "f1c6747a5e277e99e3443b65b1c4cf2f",
+      "version": "3.19.1",
+      "sign": "60ac10ad7185bd54fdc295e80c88f7dd",
+      "libcount": 34
+    },
+    "jp": {
+      "channel": "jp",
+      "package_id": "com.aniplex.magia.exedra.jp",
+      "version": "3.19.1",
+      "sign": "f54b3009bcb6d354326f1ef22bda4dd8",
       "libcount": 34
     }
   },
